@@ -1,0 +1,44 @@
+{
+  "name": "playwright-web-automation-testing",
+  "version": "1.0.0",
+  "description": "[![Playwright.dev](https://img.shields.io/badge/Documentation-Playwright-45ba4b.svg?logo=playwright)](https://playwright.dev/docs/intro) <br>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "open:codegen:myshop": "npx playwright codegen http://www.automationpractice.pl/",
+    "open:codegen:store": "npx playwright codegen https://automationteststore.com/",
+    "open:codegen:zerobank": "npx playwright codegen http://zero.webappsecurity.com/",
+    "open:codegen:demobank": "npx playwright codegen https://demo-bank.vercel.app/",
+    "open:ui": "npx playwright test --ui",
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:chromium:headed": "npx playwright test --headed --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:firefox:headed": "npx playwright test --headed --project=firefox",
+    "test:webkit": "npx playwright test --project=webkit",
+    "test:webkit:headed": "npx playwright test --headed --project=cwebkit",
+    "test:tag:failTest": "npx playwright test --grep @failTest",
+    "test:tag:without": "npx playwright test --grep-invert @failTest",
+    "report": "npx playwright show-report",
+    "prettier": "npx prettier --write .",
+    "lint:check": "eslint . --max-warnings=0",
+    "lint:fix": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "Adam Cegielka",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@playwright/test": "^1.47.1",
+    "@types/node": "^22.5.5",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.9.0",
+    "prettier": "3.3.3",
+    "typescript-eslint": "^8.6.0"
+  }
+}
