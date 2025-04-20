@@ -24,6 +24,9 @@ The repository is organized as follows:
 │   ├── e2e_JakTestowacPl/
 │   └── e2e_ZeroBank/
 ├── tips/
+│   ├── conventional_commits.md
+│   ├── playwright.md
+│   └── vscode.md
 ├── utils/
 ├── .gitignore
 ├── .prettierignore
