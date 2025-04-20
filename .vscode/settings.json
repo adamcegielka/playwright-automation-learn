@@ -1,0 +1,5 @@
+{
+  "playwright.testConfig": "./playwright.config.ts",
+  "testing.automaticallyOpenTestResults": "openOnTestStart",
+  "testing.gutterEnabled": true
+}
