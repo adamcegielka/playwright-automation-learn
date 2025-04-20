@@ -2,7 +2,8 @@
 - Lesson S03L08 [jaktestowac.pl](https://jaktestowac.pl/lesson/pw1s03l08/) - Page Object Model and Action Aggregation
  
 ## What was done in the lesson
-- **Creation of a new component side menu folder and code refactoring**
+- **Refactoring of the codebase**
+- **Aggregation of actions into reusable methods** 
 
 
 ## Chrome DevTools
