@@ -52,7 +52,7 @@ npm install eslint --save-dev
 ```js
 npm init @eslint/config
 ```
-- Add Prettier in `.eslint.config.mjs` file:
+- Add `.eslint.config.mjs` file:
 ```mjs
 import globals from 'globals';
 import pluginJs from '@eslint/js';
@@ -123,7 +123,8 @@ README.md
 "scripts": {
     "open:codegen:myshop": "npx playwright codegen http://www.automationpractice.pl/",
     "open:codegen:store": "npx playwright codegen https://automationteststore.com/",
-    "open:codegen:bank": "npx playwright codegen http://zero.webappsecurity.com/",
+    "open:codegen:zerobank": "npx playwright codegen http://zero.webappsecurity.com/",
+    "open:codegen:demobank": "npx playwright codegen https://demo-bank.vercel.app/",
     "open:ui": "npx playwright test --ui",
     "test": "npx playwright test",
     "test:headed": "npx playwright test --headed",
@@ -135,6 +136,7 @@ README.md
     "test:webkit:headed": "npx playwright test --headed --project=cwebkit",
     "test:tag:failTest": "npx playwright test --grep @failTest",
     "test:tag:without": "npx playwright test --grep-invert @failTest",
+    "report": "npx playwright show-report",
     "prettier": "npx prettier --write .",
     "lint:check": "eslint . --max-warnings=0",
     "lint:fix": "eslint . --fix"
