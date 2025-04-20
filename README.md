@@ -11,6 +11,8 @@ The repository is organized as follows:
 
 ```
 /Playwright-web-automation-testing
+├── .vscode/
+│   └── settings.json
 ├── tests/
 │   ├── api_JsonPlaceholder/
 │   ├── api_Petstore/
