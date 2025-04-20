@@ -48,10 +48,6 @@ npm init playwright@latest
 ```js
 npm install eslint --save-dev
 ```
-- Configuration 
-```js
-npm init @eslint/config
-```
 - Add `.eslint.config.mjs` file:
 ```mjs
 import globals from 'globals';
