@@ -14,7 +14,6 @@ test.describe('Payment testing', () => {
     await loginPage.loginInput.fill(userId);
     await loginPage.passwordInput.fill(userPassword);
     await loginPage.loginButton.click();
-    
   });
 
   test('easy payment', async ({ page }) => {
