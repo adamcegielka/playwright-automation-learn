@@ -26,4 +26,17 @@ export class PaymentPage {
     // Assert
     this.messagesExpect = this.page.locator('#show_messages');
   }
+
+  // Method moved out of constructor
+  async makePayment(
+    transferReceiverName: string,
+    numberAccount: string,
+    transferAmount: string,
+  ): Promise<void> {
+    await this.transferReceiver.fill(transferReceiverName);
+    await this.formAccount.fill(numberAccount);
+    await this.formAmount.fill(transferAmount);
+    await this.makeTransfer.click();
+    await this.closeButton.click();
+  }
 }
