@@ -9,14 +9,14 @@ interface User {
 }
 
 test.describe.parallel('Get users', () => {
-  const baseUrl = 'https://reqres.in/api';
+  const baseUrl = 'https://reqres.in';
 
   test('Assert Response for user from page 1', async ({ request }) => {
-    const response = await request.get(`${baseUrl}/users`, {
+    const response = await request.get(`${baseUrl}/api/users`, {
       params: { page: 1 },
     });
 
-    // Assert
+    // Status code
     expect(response.status()).toBe(200);
     console.log('Status:', response.status());
 
@@ -65,11 +65,11 @@ test.describe.parallel('Get users', () => {
   });
 
   test('Assert Response for user from page 2', async ({ request }) => {
-    const response = await request.get(`${baseUrl}/users`, {
+    const response = await request.get(`${baseUrl}/api/users`, {
       params: { page: 2 },
     });
 
-    // Assert
+    // Status code
     expect(response.status()).toBe(200);
     console.log('Status:', response.status());
 
