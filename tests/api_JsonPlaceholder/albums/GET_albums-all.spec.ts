@@ -13,7 +13,35 @@ test.describe.parallel('API Testing for albums', () => {
     const responseBody = JSON.parse(await response.text());
     console.log(responseBody);
   });
+
+  test('Assert response status for todos with query params', async ({ request }) => {
+    const response = await request.get(`${baseUrl}/albums`, {
+      params: { userId: 1 },
+    });
+
+    // Assert
+    expect(response.status()).toBe(200);
+    console.log('Status:', response.status());
+
+    const responseBody = JSON.parse(await response.text());
+    console.log(responseBody);
+  });
+
+  test('Assert response status for todos with query params id', async ({ request }) => {
+    const response = await request.get(`${baseUrl}/albums`, {
+      params: { id: 5 },
+    });
+
+    // Assert
+    expect(response.status()).toBe(200);
+    console.log('Status:', response.status());
+
+    const responseBody = JSON.parse(await response.text());
+    console.log(responseBody);
+  });
+
 });
+
 
 // Test run:
 // npm test -- tests/api_JsonPlaceholder/albums/GET_albums-all.spec.ts --project=chromium
