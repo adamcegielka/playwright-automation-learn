@@ -4,7 +4,7 @@ export class Navbar {
   readonly page: Page;
   readonly products: Locator;
   readonly cart: Locator;
-  readonly siginLogin: Locator;
+  readonly signLogin: Locator;
   readonly testCases: Locator;
   readonly apiTesting: Locator;
   readonly videoTutorials: Locator;
@@ -14,7 +14,7 @@ export class Navbar {
     this.page = page;
     this.products = page.getByRole('link', { name: 'Products' });
     this.cart = page.getByRole('link', { name: 'Cart' });
-    this.siginLogin = page.getByRole('link', { name: 'Signup / Login' });
+    this.signLogin = page.getByRole('link', { name: 'Signup / Login' });
     this.testCases = page.getByRole('link', { name: 'Test Cases' });
     this.apiTesting = page.getByRole('link', { name: 'API Testing' });
     this.videoTutorials = page.getByRole('link', { name: 'Video Tutorials' });
@@ -30,7 +30,7 @@ export class Navbar {
         await this.cart.click();
         break;
       case 'Signup / Login':
-        await this.siginLogin.click();
+        await this.signLogin.click();
         break;
       case 'Test Cases':
         await this.testCases.click();
