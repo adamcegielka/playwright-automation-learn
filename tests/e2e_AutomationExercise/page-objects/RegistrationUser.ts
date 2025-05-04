@@ -45,13 +45,13 @@ export class RegistrationUser {
     this.birthYear = page.locator('#years');
     this.checkboxNewsletter = page.getByLabel('Sign up for our newsletter!');
     this.checkboxOffers = page.getByLabel(
-      'Receive special offers from our partners!'
+      'Receive special offers from our partners!',
     );
     this.firstName = page.getByLabel('First name *');
     this.lastName = page.getByLabel('Last name *');
     this.companyName = page.getByLabel('Company', { exact: true });
     this.address1 = page.getByLabel(
-      'Address * (Street address, P.O. Box, Company name, etc.)'
+      'Address * (Street address, P.O. Box, Company name, etc.)',
     );
     this.country = page.getByRole('combobox', { name: 'Country *' });
     this.state = page.getByLabel('State *');

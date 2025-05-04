@@ -15,12 +15,14 @@ test.describe('Test Case 1: Register User', () => {
 
     const userId = testRegistrationData.userId;
     const verifyNewUser = testCase01Data.verifyNewUser;
-    const verifyEnterAccountInformation = testCase01Data.verifyEnterAccountInformation;
+    const verifyEnterAccountInformation =
+      testCase01Data.verifyEnterAccountInformation;
 
     // Blocking of network resources that generate Ads
-    await page.route("**/*", route => {
-      route.request().url().startsWith("https://googleads.") ?
-        route.abort() : route.continue();
+    await page.route('**/*', (route) => {
+      route.request().url().startsWith('https://googleads.')
+        ? route.abort()
+        : route.continue();
       return;
     });
     // --- End code
@@ -43,7 +45,6 @@ test.describe('Test Case 1: Register User', () => {
     await page.close();
   });
 });
-
 
 /*
 1. Launch browser

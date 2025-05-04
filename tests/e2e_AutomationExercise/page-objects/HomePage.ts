@@ -9,7 +9,7 @@ export class HomePage {
 
   async navHomePage() {
     await this.page.goto('https://automationexercise.com/');
-    
+
     // Check if the button exists before you try to click it
     const consentButton = this.page.getByRole('button', { name: 'Consent' });
     if (await consentButton.isVisible()) {
@@ -27,6 +27,8 @@ export class HomePage {
   }
 
   async verifyUrlCart() {
-    await expect(this.page).toHaveURL('https://automationexercise.com/view_cart');
+    await expect(this.page).toHaveURL(
+      'https://automationexercise.com/view_cart',
+    );
   }
 }

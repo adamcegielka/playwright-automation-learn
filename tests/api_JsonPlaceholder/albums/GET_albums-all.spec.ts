@@ -14,7 +14,9 @@ test.describe.parallel('API Testing for albums', () => {
     console.log(responseBody);
   });
 
-  test('Assert response status for albums with query params userId', async ({ request }) => {
+  test('Assert response status for albums with query params userId', async ({
+    request,
+  }) => {
     const response = await request.get(`${baseUrl}/albums`, {
       params: { userId: 1 },
     });
@@ -27,7 +29,9 @@ test.describe.parallel('API Testing for albums', () => {
     console.log(responseBody);
   });
 
-  test('Assert response status for albums with query params id', async ({ request }) => {
+  test('Assert response status for albums with query params id', async ({
+    request,
+  }) => {
     const response = await request.get(`${baseUrl}/albums`, {
       params: { id: 5 },
     });
@@ -40,7 +44,9 @@ test.describe.parallel('API Testing for albums', () => {
     console.log(responseBody);
   });
 
-  test('Assert response status for albums with query params title', async ({ request }) => {
+  test('Assert response status for albums with query params title', async ({
+    request,
+  }) => {
     const response = await request.get(`${baseUrl}/albums`, {
       params: { title: 'dolores ut et facere placeat' },
     });
@@ -52,9 +58,7 @@ test.describe.parallel('API Testing for albums', () => {
     const responseBody = JSON.parse(await response.text());
     console.log(responseBody);
   });
-
 });
-
 
 // Test run:
 // npm test -- tests/api_JsonPlaceholder/albums/GET_albums-all.spec.ts --project=chromium
