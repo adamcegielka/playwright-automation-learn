@@ -15,7 +15,7 @@ test.describe('Test Case 1: Register User', () => {
 
     const userId = testRegistrationData.userId;
     const verifyNewUser = testCase01Data.verifyNewUser;
-    const verifyEnterAccountInformation = testCase01Data.verifEenterAccountInformation;
+    const verifyEnterAccountInformation = testCase01Data.verifyEnterAccountInformation;
 
     // Blocking of network resources that generate Ads
     await page.route("**/*", route => {
@@ -27,7 +27,7 @@ test.describe('Test Case 1: Register User', () => {
 
     await chromium.launch();
     await homePage.navHomePage();
-    await homePage.verifytTitlePage();
+    await homePage.verifyTitlePage();
     await homePage.verifyHomePage();
     await navbar.clickOnNav('Signup / Login');
     await expect(page.getByText(verifyNewUser)).toBeVisible();
@@ -65,3 +65,5 @@ test.describe('Test Case 1: Register User', () => {
 17. Click 'Delete Account' button
 18. Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
 */
+
+// npm test -- tests/e2e_AutomationExercise/test/testCase01.spec.ts --project=chromium --headed
