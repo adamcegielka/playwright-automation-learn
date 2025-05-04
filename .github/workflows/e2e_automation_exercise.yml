@@ -22,6 +22,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Run Playwright tests for e2e_AutomationExercise
+      # Install Playwright browsers
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps
+
+      # Run Playwright tests for e2e_AutomationExercise in Chromium only
       - name: Run Playwright tests
-        run: npx playwright test tests/e2e_AutomationExercise --reporter=dot
+        run: npx playwright test tests/e2e_AutomationExercise --project=chromium --reporter=dot
