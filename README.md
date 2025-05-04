@@ -11,6 +11,8 @@ The repository is organized as follows:
 
 ```
 /Playwright-web-automation-testing
+├── .github/
+│   └── workflows
 ├── .vscode/
 │   └── settings.json
 ├── tests/
@@ -124,6 +126,7 @@ README.md
     "open:codegen:store": "npx playwright codegen https://automationteststore.com/",
     "open:codegen:zerobank": "npx playwright codegen http://zero.webappsecurity.com/",
     "open:codegen:demobank": "npx playwright codegen https://demo-bank.vercel.app/",
+    "open:codegen:automationexercise": "npx playwright codegen https://automationexercise.com/",
     "open:ui": "npx playwright test --ui",
     "test": "npx playwright test",
     "test:headed": "npx playwright test --headed",
@@ -146,6 +149,21 @@ After that in terminal use `npm ...` e.g.:
 - `npm test`
 - `npm run test:chromium:headed`
 - `npm run prettier`
+
+## CI/CD with GitHub Actions
+
+This project includes workflows for running automated tests using GitHub Actions. You can manually trigger these workflows from the **Actions** tab in the repository.
+
+### Available Workflows:
+- **E2E Automation Exercise Tests**: Runs end-to-end tests located in the `tests/e2e_AutomationExercise` folder.
+- **API JsonPlaceholder Tests**: Runs API tests located in the `tests/api_JsonPlaceholder` folder.
+
+### How to Trigger Workflows:
+1. Go to the **Actions** tab in the repository on GitHub.
+2. Select the desired workflow:
+   - **E2E Automation Exercise Tests** for end-to-end tests.
+   - **API JsonPlaceholder Tests** for API tests.
+3. Click the **Run workflow** button and follow the instructions to start the tests.
 
 ## VS Code plugins installed
 
