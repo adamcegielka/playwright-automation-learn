@@ -10,9 +10,9 @@ export class RegistrationUser {
   // details
   readonly courtesyPhrase: Locator;
   readonly userPassword: Locator;
-  readonly birtDay: Locator;
-  readonly birtMonth: Locator;
-  readonly birtYear: Locator;
+  readonly birthDay: Locator;
+  readonly birthMonth: Locator;
+  readonly birthYear: Locator;
   readonly checkboxNewsletter: Locator;
   readonly checkboxOffers: Locator;
   readonly firstName: Locator;
@@ -40,9 +40,9 @@ export class RegistrationUser {
     // details
     this.courtesyPhrase = page.locator('#uniform-id_gender1');
     this.userPassword = page.getByLabel('Password *');
-    this.birtDay = page.locator('#days');
-    this.birtMonth = page.locator('#months');
-    this.birtYear = page.locator('#years');
+    this.birthDay = page.locator('#days');
+    this.birthMonth = page.locator('#months');
+    this.birthYear = page.locator('#years');
     this.checkboxNewsletter = page.getByLabel('Sign up for our newsletter!');
     this.checkboxOffers = page.getByLabel(
       'Receive special offers from our partners!'
@@ -103,9 +103,9 @@ export class RegistrationUser {
     const mobileNumber = testRegistrationData.mobileNumber;
     await this.courtesyPhrase.check();
     await this.userPassword.fill(userPassword);
-    await this.birtDay.selectOption(birthDay);
-    await this.birtMonth.selectOption(birthMonth);
-    await this.birtYear.selectOption(birthYear);
+    await this.birthDay.selectOption(birthDay);
+    await this.birthMonth.selectOption(birthMonth);
+    await this.birthYear.selectOption(birthYear);
     await this.checkboxNewsletter.check();
     await this.checkboxOffers.check();
     await this.firstName.fill(firstName);
@@ -145,9 +145,9 @@ export class RegistrationUser {
     await this.signupButton.click();
     await this.courtesyPhrase.check();
     await this.userPassword.fill(userPassword);
-    await this.birtDay.selectOption(birthDay);
-    await this.birtMonth.selectOption(birthMonth);
-    await this.birtYear.selectOption(birthYear);
+    await this.birthDay.selectOption(birthDay);
+    await this.birthMonth.selectOption(birthMonth);
+    await this.birthYear.selectOption(birthYear);
     await this.checkboxNewsletter.check();
     await this.checkboxOffers.check();
     await this.firstName.fill(firstName);
