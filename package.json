@@ -12,6 +12,7 @@
     "open:codegen:store": "npx playwright codegen https://automationteststore.com/",
     "open:codegen:zerobank": "npx playwright codegen http://zero.webappsecurity.com/",
     "open:codegen:demobank": "npx playwright codegen https://demo-bank.vercel.app/",
+    "open:codegen:automationexercise": "npx playwright codegen https://automationexercise.com/",
     "open:ui": "npx playwright test --ui",
     "test": "npx playwright test",
     "test:headed": "npx playwright test --headed",
