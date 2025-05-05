@@ -27,7 +27,6 @@ test.describe('Test Case 2: login User with correct email and password', () => {
     await loginPage.logout();
   });
 
-  // Test Case 2: login User with correct email and password
   test('TC02 POM login user with correct email and password', async ({
     page,
   }) => {
