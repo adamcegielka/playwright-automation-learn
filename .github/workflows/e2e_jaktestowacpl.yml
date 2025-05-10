@@ -1,0 +1,47 @@
+name: E2E JakTestowacPl Tests
+
+on:
+  workflow_dispatch: # Manual launch of workflow
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        lesson:
+          - lesson_01
+          - lesson_02
+          - lesson_03
+          - lesson_04
+          - lesson_05
+          - lesson_06
+          - lesson_07
+          - lesson_08
+          - lesson_09
+          - lesson_10
+          - lesson_11
+          - lesson_12
+          - lesson_13
+          - lesson_14
+          - lesson_15
+          - lesson_16
+
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Run Playwright tests for each lesson
+      - name: Run Playwright tests for ${{ matrix.lesson }}
+        run: npx playwright test tests/e2e_JakTestowacPl/${{ matrix.lesson }} --project=chromium --reporter=dot
