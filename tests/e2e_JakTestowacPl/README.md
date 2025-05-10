@@ -24,6 +24,8 @@
 - [lesson_12](https://github.com/AdamCegGrid/Playwright-web-automation-testing/tree/main/tests/e2e_JakTestowacPl/lesson_12) -> Simplest implementation of the POM pattern
 - [lesson_13](https://github.com/AdamCegGrid/Playwright-web-automation-testing/tree/main/tests/e2e_JakTestowacPl/lesson_13) -> POM: task to perform
 - [lesson_14](https://github.com/AdamCegGrid/Playwright-web-automation-testing/tree/main/tests/e2e_JakTestowacPl/lesson_14) -> POM and components, common elements
+- [lesson_15](https://github.com/AdamCegGrid/Playwright-web-automation-testing/tree/main/tests/e2e_JakTestowacPl/lesson_15) -> Page Object Model and Action Aggregation
+- [lesson_16](https://github.com/AdamCegGrid/Playwright-web-automation-testing/tree/main/tests/e2e_JakTestowacPl/lesson_16) -> POM with aggregation and test refactoring
 
 ## Run tests:
 - `npm run open:codegen:demobank`
