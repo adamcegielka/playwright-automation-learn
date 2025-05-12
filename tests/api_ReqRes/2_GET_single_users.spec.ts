@@ -24,10 +24,7 @@ test.describe.parallel('Get single users', () => {
     expect(responseBody.data).toHaveProperty('email', 'janet.weaver@reqres.in');
     expect(responseBody.data).toHaveProperty('first_name', 'Janet');
     expect(responseBody.data).toHaveProperty('last_name', 'Weaver');
-    expect(responseBody.data).toHaveProperty(
-      'avatar',
-      'https://reqres.in/img/faces/2-image.jpg',
-    );
+    expect(responseBody.data).toHaveProperty('avatar', 'https://reqres.in/img/faces/2-image.jpg');
   });
 
   test('Get User Detail - second method', async ({ request }) => {

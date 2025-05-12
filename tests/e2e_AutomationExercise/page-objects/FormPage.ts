@@ -21,12 +21,7 @@ export class FormPage {
     this.verifySuccessMessage = page.locator('div.status.alert.alert-success');
   }
 
-  async fillForm(
-    name: string,
-    email: string,
-    subject: string,
-    comment: string,
-  ) {
+  async fillForm(name: string, email: string, subject: string, comment: string) {
     await this.userId.type(name);
     await this.userEmail.type(email);
     await this.subject.type(subject);
@@ -34,9 +29,7 @@ export class FormPage {
   }
 
   async uploadFile() {
-    await this.file.setInputFiles(
-      'tests/e2e_AutomationExercise/utils/upload-file/myfile.txt',
-    );
+    await this.file.setInputFiles('tests/e2e_AutomationExercise/utils/upload-file/myfile.txt');
   }
 
   async submitForm() {
@@ -44,8 +37,6 @@ export class FormPage {
   }
 
   async assertFormSent() {
-    await expect(this.verifySuccessMessage).toContainText(
-      'Success! Your details have been submitted successfully.',
-    );
+    await expect(this.verifySuccessMessage).toContainText('Success! Your details have been submitted successfully.');
   }
 }

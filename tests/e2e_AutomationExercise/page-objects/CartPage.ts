@@ -71,9 +71,7 @@ export class CartPage {
   }
 
   async addComment() {
-    await this.insertMessage.fill(
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    );
+    await this.insertMessage.fill('Lorem Ipsum is simply dummy text of the printing and typesetting industry.');
   }
 
   async clickPlaceOrder() {

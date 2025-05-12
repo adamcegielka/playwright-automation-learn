@@ -14,9 +14,7 @@ test.describe.parallel('API Testing for albums', () => {
     console.log(responseBody);
   });
 
-  test('Assert response status for albums with query params userId', async ({
-    request,
-  }) => {
+  test('Assert response status for albums with query params userId', async ({ request }) => {
     const response = await request.get(`${baseUrl}/albums`, {
       params: { userId: 1 },
     });
@@ -29,9 +27,7 @@ test.describe.parallel('API Testing for albums', () => {
     console.log(responseBody);
   });
 
-  test('Assert response status for albums with query params id', async ({
-    request,
-  }) => {
+  test('Assert response status for albums with query params id', async ({ request }) => {
     const response = await request.get(`${baseUrl}/albums`, {
       params: { id: 5 },
     });
@@ -44,9 +40,7 @@ test.describe.parallel('API Testing for albums', () => {
     console.log(responseBody);
   });
 
-  test('Assert response status for albums with query params title', async ({
-    request,
-  }) => {
+  test('Assert response status for albums with query params title', async ({ request }) => {
     const response = await request.get(`${baseUrl}/albums`, {
       params: { title: 'dolores ut et facere placeat' },
     });

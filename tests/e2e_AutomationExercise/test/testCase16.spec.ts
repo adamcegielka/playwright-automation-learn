@@ -42,9 +42,7 @@ test.describe('Test Case 16: Place Order: Login before Checkout', () => {
 
     // Blocking of network resources that generate Ads
     await page.route('**/*', (route) => {
-      route.request().url().startsWith('https://googleads.')
-        ? route.abort()
-        : route.continue();
+      route.request().url().startsWith('https://googleads.') ? route.abort() : route.continue();
       return;
     });
     // --- End code

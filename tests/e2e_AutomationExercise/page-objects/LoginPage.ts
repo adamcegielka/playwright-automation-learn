@@ -12,17 +12,11 @@ export class LoginPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.userEmailInput = page
-      .locator('form')
-      .filter({ hasText: 'Login' })
-      .getByPlaceholder('Email Address');
+    this.userEmailInput = page.locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address');
     this.userPasswordInput = page.getByPlaceholder('Password');
     this.clickButton = page.getByRole('button', { name: 'Login' });
     this.logoutButton = page.getByRole('link', { name: 'Logout' });
-    this.userEmailInputIncorrect = page
-      .locator('form')
-      .filter({ hasText: 'Login' })
-      .getByPlaceholder('Email Address');
+    this.userEmailInputIncorrect = page.locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address');
     this.userPasswordInputIncorrect = page.getByPlaceholder('Password');
   }
 

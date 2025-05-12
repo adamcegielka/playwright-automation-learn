@@ -20,9 +20,7 @@ test.describe('First Tests', () => {
 
     // Assertions
     await expect(page).toHaveURL(url);
-    await expect(page).toHaveTitle(
-      /Zero - Personal Banking - Loans - Credit Cards/,
-    );
+    await expect(page).toHaveTitle(/Zero - Personal Banking - Loans - Credit Cards/);
   });
 
   test('incorrect login validation', async () => {
@@ -36,8 +34,6 @@ test.describe('First Tests', () => {
 
     // Assertions
     const errorMessage = await page.locator('.alert-error');
-    await expect(errorMessage).toContainText(
-      'Login and/or password are wrong.',
-    );
+    await expect(errorMessage).toContainText('Login and/or password are wrong.');
   });
 });

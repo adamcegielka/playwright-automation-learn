@@ -12,9 +12,7 @@ test.describe('Test Case 13: Verify Product quantity in Cart', () => {
 
     // Blocking of network resources that generate Ads
     await page.route('**/*', (route) => {
-      route.request().url().startsWith('https://googleads.')
-        ? route.abort()
-        : route.continue();
+      route.request().url().startsWith('https://googleads.') ? route.abort() : route.continue();
       return;
     });
     // --- End code
@@ -23,19 +21,13 @@ test.describe('Test Case 13: Verify Product quantity in Cart', () => {
     await homePage.navHomePage();
     await homePage.verifyHomePage();
     await homePage.verifyTitlePage();
-    await page
-      .locator('div:nth-child(6) > .product-image-wrapper > .choose')
-      .click();
+    await page.locator('div:nth-child(6) > .product-image-wrapper > .choose').click();
     await expect(page.getByText(verifyDetail)).toBeVisible();
     await page.locator('#quantity').fill(quantityProduct);
     await page.click('button[type="button"]');
     await page.getByRole('link', { name: 'View Cart' }).click();
-    await expect(
-      page.getByRole('row', { name: verifyProductDisplayed }),
-    ).toBeVisible();
-    await expect(
-      page.getByRole('button', { name: quantityProduct }),
-    ).toBeVisible();
+    await expect(page.getByRole('row', { name: verifyProductDisplayed })).toBeVisible();
+    await expect(page.getByRole('button', { name: quantityProduct })).toBeVisible();
   });
 });
 

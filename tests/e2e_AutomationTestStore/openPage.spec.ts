@@ -20,8 +20,6 @@ test.describe('Open Page', () => {
 
     // Assertions
     await expect(page).toHaveURL(url);
-    await expect(page).toHaveTitle(
-      /A place to practice your automation skills!/,
-    );
+    await expect(page).toHaveTitle(/A place to practice your automation skills!/);
   });
 });

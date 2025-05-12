@@ -28,11 +28,7 @@ export class PaymentPage {
   }
 
   // Method moved out of constructor
-  async makePayment(
-    transferReceiverName: string,
-    numberAccount: string,
-    transferAmount: string,
-  ): Promise<void> {
+  async makePayment(transferReceiverName: string, numberAccount: string, transferAmount: string): Promise<void> {
     await this.transferReceiver.fill(transferReceiverName);
     await this.formAccount.fill(numberAccount);
     await this.formAmount.fill(transferAmount);

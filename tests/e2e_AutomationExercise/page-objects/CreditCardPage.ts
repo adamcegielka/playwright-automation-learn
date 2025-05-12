@@ -30,8 +30,7 @@ export class CreditCardPage {
     const cardName = testPaymentByCarsData.cardVendor;
     const cardNumber = testPaymentByCarsData.cardNumber;
     const cardCvv = testPaymentByCarsData.cardCvv;
-    const cardExpirationDateMonth =
-      testPaymentByCarsData.cardExpirationDateMonth;
+    const cardExpirationDateMonth = testPaymentByCarsData.cardExpirationDateMonth;
     const cardExpirationDateYear = testPaymentByCarsData.cardExpirationDateYear;
     await this.cardName.fill(cardName);
     await this.cardNumber.fill(cardNumber);

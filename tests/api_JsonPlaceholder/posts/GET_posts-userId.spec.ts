@@ -5,8 +5,7 @@ test.describe.parallel('API Testing 01', () => {
 
   test('Assert Response Status for post with userId 1', async ({ request }) => {
     const response = await request.get(`${baseUrl}/posts/1`);
-    const responseTitle =
-      'sunt aut facere repellat provident occaecati excepturi optio reprehenderit';
+    const responseTitle = 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit';
 
     // Assert
     expect(response.status()).toBe(200);

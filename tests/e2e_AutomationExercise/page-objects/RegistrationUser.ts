@@ -32,10 +32,7 @@ export class RegistrationUser {
     this.page = page;
     this.userID = page.getByPlaceholder('Name');
     this.userIdNew = page.getByPlaceholder('Name');
-    this.userEmail = page
-      .locator('form')
-      .filter({ hasText: 'Signup' })
-      .getByPlaceholder('Email Address');
+    this.userEmail = page.locator('form').filter({ hasText: 'Signup' }).getByPlaceholder('Email Address');
     this.signupButton = page.getByRole('button', { name: 'Signup' });
     // details
     this.courtesyPhrase = page.locator('#uniform-id_gender1');
@@ -44,15 +41,11 @@ export class RegistrationUser {
     this.birthMonth = page.locator('#months');
     this.birthYear = page.locator('#years');
     this.checkboxNewsletter = page.getByLabel('Sign up for our newsletter!');
-    this.checkboxOffers = page.getByLabel(
-      'Receive special offers from our partners!',
-    );
+    this.checkboxOffers = page.getByLabel('Receive special offers from our partners!');
     this.firstName = page.getByLabel('First name *');
     this.lastName = page.getByLabel('Last name *');
     this.companyName = page.getByLabel('Company', { exact: true });
-    this.address1 = page.getByLabel(
-      'Address * (Street address, P.O. Box, Company name, etc.)',
-    );
+    this.address1 = page.getByLabel('Address * (Street address, P.O. Box, Company name, etc.)');
     this.country = page.getByRole('combobox', { name: 'Country *' });
     this.state = page.getByLabel('State *');
     this.city = page.getByLabel('City *');

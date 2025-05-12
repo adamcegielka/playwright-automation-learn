@@ -14,9 +14,7 @@ test.describe('Test Case 18: View Category Products', () => {
 
     // Blocking of network resources that generate Ads
     await page.route('**/*', (route) => {
-      route.request().url().startsWith('https://googleads.')
-        ? route.abort()
-        : route.continue();
+      route.request().url().startsWith('https://googleads.') ? route.abort() : route.continue();
       return;
     });
     // --- End code
@@ -26,14 +24,10 @@ test.describe('Test Case 18: View Category Products', () => {
     await expect(page.getByText(verifyCategories)).toBeVisible();
     await sidebar.categoryWomen();
     await sidebar.categoryWomenTops();
-    await expect(
-      page.getByRole('heading', { name: verifyCategoryWomen }),
-    ).toBeVisible();
+    await expect(page.getByRole('heading', { name: verifyCategoryWomen })).toBeVisible();
     await sidebar.categoryMen();
     await sidebar.categoryMenJeans();
-    await expect(
-      page.getByRole('heading', { name: verifyCategoryMen }),
-    ).toBeVisible();
+    await expect(page.getByRole('heading', { name: verifyCategoryMen })).toBeVisible();
   });
 });
 

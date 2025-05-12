@@ -27,11 +27,7 @@ test.describe('Payment testing', () => {
     const expectMessage = `Przelew wykonany! ${transferAmount},00PLN dla Smok Wawelski`;
 
     // Act
-    await paymentPage.makePayment(
-      transferReceiverName,
-      numberAccount,
-      transferAmount,
-    );
+    await paymentPage.makePayment(transferReceiverName, numberAccount, transferAmount);
 
     // Assert
     await expect(paymentPage.messagesExpect).toHaveText(expectMessage);

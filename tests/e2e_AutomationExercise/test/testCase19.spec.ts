@@ -12,18 +12,13 @@ test.describe('Test Case 19: View & Cart Brand Products', () => {
 
     const verifyBrandsPolo = testCase19Data.verifyBrandsPolo;
     const verifyBrandPoloProducts = testCase19Data.verifyBrandPoloProducts;
-    const verifyBrandPoloProductsAll =
-      testCase19Data.verifyBrandPoloProductsAll;
-    const verifyBrandBabyhugProducts =
-      testCase19Data.verifyBrandBabyhugProducts;
-    const verifyBrandBabyhugProductsAll =
-      testCase19Data.verifyBrandBabyhugProductsAll;
+    const verifyBrandPoloProductsAll = testCase19Data.verifyBrandPoloProductsAll;
+    const verifyBrandBabyhugProducts = testCase19Data.verifyBrandBabyhugProducts;
+    const verifyBrandBabyhugProductsAll = testCase19Data.verifyBrandBabyhugProductsAll;
 
     // Blocking of network resources that generate Ads
     await page.route('**/*', (route) => {
-      route.request().url().startsWith('https://googleads.')
-        ? route.abort()
-        : route.continue();
+      route.request().url().startsWith('https://googleads.') ? route.abort() : route.continue();
       return;
     });
     // --- End code
@@ -33,14 +28,10 @@ test.describe('Test Case 19: View & Cart Brand Products', () => {
     await navbar.clickOnNav('Products');
     await expect(page.getByText(verifyBrandsPolo)).toBeVisible();
     await sidebar.brands('Polo');
-    await expect(
-      page.getByRole('heading', { name: verifyBrandPoloProducts }),
-    ).toBeVisible();
+    await expect(page.getByRole('heading', { name: verifyBrandPoloProducts })).toBeVisible();
     await expect(page.getByText(verifyBrandPoloProductsAll)).toBeVisible();
     await sidebar.brands('Babyhug');
-    await expect(
-      page.getByRole('heading', { name: verifyBrandBabyhugProducts }),
-    ).toBeVisible();
+    await expect(page.getByRole('heading', { name: verifyBrandBabyhugProducts })).toBeVisible();
     await expect(page.getByText(verifyBrandBabyhugProductsAll)).toBeVisible();
   });
 });

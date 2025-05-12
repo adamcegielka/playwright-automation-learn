@@ -17,9 +17,7 @@ test.describe('User login to Demobank', () => {
     await page.getByTestId('password-input').click();
 
     // Assert
-    await expect(page.getByTestId('error-login-id')).toHaveText(
-      'identyfikator ma min. 8 znaków',
-    );
+    await expect(page.getByTestId('error-login-id')).toHaveText('identyfikator ma min. 8 znaków');
   });
 
   test('unsuccessful login with too short password', async ({ page }) => {
@@ -29,9 +27,7 @@ test.describe('User login to Demobank', () => {
     await page.getByTestId('password-input').blur();
 
     // Assert
-    await expect(page.getByTestId('error-login-password')).toHaveText(
-      'hasło ma min. 8 znaków',
-    );
+    await expect(page.getByTestId('error-login-password')).toHaveText('hasło ma min. 8 znaków');
   });
 });
 

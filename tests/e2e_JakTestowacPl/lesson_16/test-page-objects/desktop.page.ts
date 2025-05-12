@@ -32,9 +32,7 @@ export class DesktopPage {
     // Act
     this.topUpReceiver = this.page.locator('#widget_1_topup_receiver');
     this.topUpAmount = this.page.locator('#widget_1_topup_amount');
-    this.topUpAgreement = this.page.locator(
-      '#uniform-widget_1_topup_agreement span',
-    );
+    this.topUpAgreement = this.page.locator('#uniform-widget_1_topup_agreement span');
     this.topUpPhone = this.page.getByRole('button', {
       name: 'doładuj telefon',
     });

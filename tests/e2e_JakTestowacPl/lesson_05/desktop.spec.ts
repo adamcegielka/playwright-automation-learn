@@ -43,9 +43,7 @@ test.describe('Desktop testing', () => {
     await page.getByTestId('login-input').fill(userId);
     await page.getByTestId('password-input').fill(userPassword);
     await page.getByTestId('login-button').click();
-    await page
-      .locator('#widget_1_topup_receiver')
-      .selectOption(selectPhoneNumber);
+    await page.locator('#widget_1_topup_receiver').selectOption(selectPhoneNumber);
     await page.locator('#widget_1_topup_amount').fill(transferAmount);
     await page.locator('#uniform-widget_1_topup_agreement span').click();
     await page.getByRole('button', { name: 'doładuj telefon' }).click();

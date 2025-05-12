@@ -33,9 +33,7 @@ test.describe('Desktop testing', () => {
     await page.getByTestId('close-button').click();
 
     // Assert
-    await expect(page.locator('#show_messages')).toHaveText(
-      'Doładowanie wykonane! 90,00PLN na numer 502 xxx xxx',
-    );
+    await expect(page.locator('#show_messages')).toHaveText('Doładowanie wykonane! 90,00PLN na numer 502 xxx xxx');
   });
 });
 
