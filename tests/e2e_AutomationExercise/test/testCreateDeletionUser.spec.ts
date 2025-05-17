@@ -5,6 +5,7 @@ import { LoginPage } from '../page-objects/LoginPage';
 import { Navbar } from '../page-objects/components/Navbar';
 import { DeletionUser } from '../page-objects/DeletionUser';
 
+// Remove the .skip() method to run the tests
 test.describe.skip('User Registration and Deletion', () => {
   let homePage: HomePage;
   let navbar: Navbar;
