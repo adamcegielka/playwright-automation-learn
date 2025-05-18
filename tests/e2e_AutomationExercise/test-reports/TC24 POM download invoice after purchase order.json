@@ -1,0 +1,21 @@
+{
+  "test": "TC24 POM download invoice after purchase order",
+  "status": "timedOut",
+  "executionTime": 31217,
+  "errors": [
+    {
+      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+      "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+    },
+    {
+      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'Register / Login' })\u001b[22m\n",
+      "stack": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'Register / Login' })\u001b[22m\n\n    at D:\\_My_Projekts\\ 2025\\playwright-automation-learn\\tests\\e2e_AutomationExercise\\test\\testCase24.spec.ts:39:64",
+      "location": {
+        "file": "D:\\_My_Projekts\\ 2025\\playwright-automation-learn\\tests\\e2e_AutomationExercise\\test\\testCase24.spec.ts",
+        "column": 64,
+        "line": 39
+      },
+      "snippet": "\u001b[0m \u001b[90m 37 |\u001b[39m     \u001b[36mawait\u001b[39m cartPage\u001b[33m.\u001b[39mverifyCartPageIsDisplayed()\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m     \u001b[36mawait\u001b[39m cartPage\u001b[33m.\u001b[39mclickbuttonProToCheckout()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Register / Login'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m registrationUser\u001b[33m.\u001b[39menterNameEmail()\u001b[33m;\u001b[39m\n \u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m registrationUser\u001b[33m.\u001b[39mcreateAccount()\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m registrationUser\u001b[33m.\u001b[39mmessageAccountCreated()\u001b[33m;\u001b[39m\u001b[0m"
+    }
+  ]
+}

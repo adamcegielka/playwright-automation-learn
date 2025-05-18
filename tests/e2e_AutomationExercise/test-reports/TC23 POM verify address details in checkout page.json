@@ -1,0 +1,21 @@
+{
+  "test": "TC23 POM verify address details in checkout page",
+  "status": "timedOut",
+  "executionTime": 30468,
+  "errors": [
+    {
+      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+      "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+    },
+    {
+      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'View Cart' })\u001b[22m\n",
+      "stack": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'View Cart' })\u001b[22m\n\n    at D:\\_My_Projekts\\ 2025\\playwright-automation-learn\\tests\\e2e_AutomationExercise\\test\\testCase23.spec.ts:41:57",
+      "location": {
+        "file": "D:\\_My_Projekts\\ 2025\\playwright-automation-learn\\tests\\e2e_AutomationExercise\\test\\testCase23.spec.ts",
+        "column": 57,
+        "line": 41
+      },
+      "snippet": "\u001b[0m \u001b[90m 39 |\u001b[39m     \u001b[36mconst\u001b[39m winterTop \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'[data-product-id=\"5\"]'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 40 |\u001b[39m     \u001b[36mawait\u001b[39m winterTop\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 41 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'View Cart'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 42 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(urlCart)\u001b[33m;\u001b[39m\n \u001b[90m 43 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(verifyShoppingCart))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m cartPage\u001b[33m.\u001b[39mclickbuttonProToCheckout()\u001b[33m;\u001b[39m\u001b[0m"
+    }
+  ]
+}

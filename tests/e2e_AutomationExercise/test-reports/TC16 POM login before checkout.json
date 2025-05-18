@@ -1,0 +1,27 @@
+{
+  "test": "TC16 POM login before checkout",
+  "status": "timedOut",
+  "executionTime": 31131,
+  "errors": [
+    {
+      "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+      "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at D:\\_My_Projekts\\ 2025\\playwright-automation-learn\\tests\\e2e_AutomationExercise\\test\\testCase16.spec.ts:18:8",
+      "location": {
+        "file": "D:\\_My_Projekts\\ 2025\\playwright-automation-learn\\tests\\e2e_AutomationExercise\\test\\testCase16.spec.ts",
+        "column": 8,
+        "line": 18
+      },
+      "snippet": "\u001b[0m \u001b[90m 16 |\u001b[39m\n \u001b[90m 17 |\u001b[39m   \u001b[90m// Creation a new user before the test\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 18 |\u001b[39m   test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\n \u001b[90m    |\u001b[39m        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 19 |\u001b[39m     homePage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mHomePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m     loginPage \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mLoginPage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 21 |\u001b[39m     navbar \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mNavbar\u001b[39m(page)\u001b[33m;\u001b[39m\u001b[0m"
+    },
+    {
+      "message": "Error: locator.check: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#uniform-id_gender1')\u001b[22m\n",
+      "stack": "Error: locator.check: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#uniform-id_gender1')\u001b[22m\n\n    at RegistrationUser.registerNewUser (D:\\_My_Projekts\\ 2025\\playwright-automation-learn\\tests\\e2e_AutomationExercise\\page-objects\\RegistrationUser.ts:139:31)\n    at D:\\_My_Projekts\\ 2025\\playwright-automation-learn\\tests\\e2e_AutomationExercise\\test\\testCase16.spec.ts:26:5",
+      "location": {
+        "file": "D:\\_My_Projekts\\ 2025\\playwright-automation-learn\\tests\\e2e_AutomationExercise\\page-objects\\RegistrationUser.ts",
+        "column": 31,
+        "line": 139
+      },
+      "snippet": "\u001b[90m   at \u001b[39me2e_AutomationExercise\\page-objects\\RegistrationUser.ts:139\n\n\u001b[0m \u001b[90m 137 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muserEmail\u001b[33m.\u001b[39mfill(userEmail)\u001b[33m;\u001b[39m\n \u001b[90m 138 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignupButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 139 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcourtesyPhrase\u001b[33m.\u001b[39mcheck()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 140 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muserPassword\u001b[33m.\u001b[39mfill(userPassword)\u001b[33m;\u001b[39m\n \u001b[90m 141 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mbirthDay\u001b[33m.\u001b[39mselectOption(birthDay)\u001b[33m;\u001b[39m\n \u001b[90m 142 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mbirthMonth\u001b[33m.\u001b[39mselectOption(birthMonth)\u001b[33m;\u001b[39m\u001b[0m"
+    }
+  ]
+}
