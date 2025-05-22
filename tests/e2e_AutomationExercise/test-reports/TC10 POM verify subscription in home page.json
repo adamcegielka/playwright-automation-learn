@@ -1,6 +1,7 @@
 {
   "test": "TC10 POM verify subscription in home page",
   "status": "passed",
-  "executionTime": 2965,
-  "errors": []
+  "executionTime": 3200,
+  "errors": [],
+  "date": "2025-05-22T18:23:07.304Z"
 }
