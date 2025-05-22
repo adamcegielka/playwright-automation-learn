@@ -1,21 +1,6 @@
 {
   "test": "TC15 POM register before checkout",
-  "status": "timedOut",
-  "executionTime": 31036,
-  "errors": [
-    {
-      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-      "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-    },
-    {
-      "message": "Error: locator.check: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#uniform-id_gender1')\u001b[22m\n",
-      "stack": "Error: locator.check: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#uniform-id_gender1')\u001b[22m\n\n    at RegistrationUser.createAccount (D:\\_My_Projekts\\ 2025\\playwright-automation-learn\\tests\\e2e_AutomationExercise\\page-objects\\RegistrationUser.ts:97:31)\n    at D:\\_My_Projekts\\ 2025\\playwright-automation-learn\\tests\\e2e_AutomationExercise\\test\\testCase15.spec.ts:38:28",
-      "location": {
-        "file": "D:\\_My_Projekts\\ 2025\\playwright-automation-learn\\tests\\e2e_AutomationExercise\\page-objects\\RegistrationUser.ts",
-        "column": 31,
-        "line": 97
-      },
-      "snippet": "\u001b[90m   at \u001b[39me2e_AutomationExercise\\page-objects\\RegistrationUser.ts:97\n\n\u001b[0m \u001b[90m  95 |\u001b[39m     \u001b[36mconst\u001b[39m zipCode \u001b[33m=\u001b[39m testRegistrationData\u001b[33m.\u001b[39mzipCode\u001b[33m;\u001b[39m\n \u001b[90m  96 |\u001b[39m     \u001b[36mconst\u001b[39m mobileNumber \u001b[33m=\u001b[39m testRegistrationData\u001b[33m.\u001b[39mmobileNumber\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  97 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcourtesyPhrase\u001b[33m.\u001b[39mcheck()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  98 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39muserPassword\u001b[33m.\u001b[39mfill(userPassword)\u001b[33m;\u001b[39m\n \u001b[90m  99 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mbirthDay\u001b[33m.\u001b[39mselectOption(birthDay)\u001b[33m;\u001b[39m\n \u001b[90m 100 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mbirthMonth\u001b[33m.\u001b[39mselectOption(birthMonth)\u001b[33m;\u001b[39m\u001b[0m"
-    }
-  ]
+  "status": "passed",
+  "executionTime": 10541,
+  "errors": []
 }
