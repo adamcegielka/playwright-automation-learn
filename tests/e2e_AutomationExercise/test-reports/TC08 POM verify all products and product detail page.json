@@ -1,6 +1,7 @@
 {
   "test": "TC08 POM verify all products and product detail page",
   "status": "passed",
-  "executionTime": 4014,
-  "errors": []
+  "executionTime": 4649,
+  "errors": [],
+  "date": "2025-05-22T18:20:49.606Z"
 }
