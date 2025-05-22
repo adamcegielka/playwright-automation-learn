@@ -1,6 +1,7 @@
 {
   "test": "TC04 POM logout user",
   "status": "passed",
-  "executionTime": 17205,
-  "errors": []
+  "executionTime": 14407,
+  "errors": [],
+  "date": "2025-05-22T18:13:50.059Z"
 }
