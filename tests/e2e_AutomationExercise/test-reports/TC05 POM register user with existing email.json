@@ -1,6 +1,7 @@
 {
   "test": "TC05 POM register user with existing email",
   "status": "passed",
-  "executionTime": 11720,
-  "errors": []
+  "executionTime": 13123,
+  "errors": [],
+  "date": "2025-05-22T18:15:13.148Z"
 }
