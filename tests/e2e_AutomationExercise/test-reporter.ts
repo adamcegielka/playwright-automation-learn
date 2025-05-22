@@ -26,6 +26,7 @@ class MyReporter implements Reporter {
       status: result.status,
       executionTime: result.duration,
       errors: result.errors,
+      date: new Date().toISOString(), // <-- dodana data
     };
 
     // Replace invalid filename characters
