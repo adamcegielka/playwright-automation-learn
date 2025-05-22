@@ -1,6 +1,7 @@
 {
   "test": "TC01 POM register user",
   "status": "passed",
-  "executionTime": 8196,
-  "errors": []
+  "executionTime": 7318,
+  "errors": [],
+  "date": "2025-05-22T18:03:03.193Z"
 }
