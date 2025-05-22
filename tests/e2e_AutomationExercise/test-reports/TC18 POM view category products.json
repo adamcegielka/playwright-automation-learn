@@ -1,21 +1,6 @@
 {
   "test": "TC18 POM view category products",
-  "status": "timedOut",
-  "executionTime": 31199,
-  "errors": [
-    {
-      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
-      "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
-    },
-    {
-      "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'Jeans' })\u001b[22m\n",
-      "stack": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: 'Jeans' })\u001b[22m\n\n    at Sidebar.categoryMenJeans (D:\\_My_Projekts\\ 2025\\playwright-automation-learn\\tests\\e2e_AutomationExercise\\page-objects\\components\\Sidebar.ts:75:25)\n    at D:\\_My_Projekts\\ 2025\\playwright-automation-learn\\tests\\e2e_AutomationExercise\\test\\testCase18.spec.ts:29:19",
-      "location": {
-        "file": "D:\\_My_Projekts\\ 2025\\playwright-automation-learn\\tests\\e2e_AutomationExercise\\page-objects\\components\\Sidebar.ts",
-        "column": 25,
-        "line": 75
-      },
-      "snippet": "\u001b[90m   at \u001b[39me2e_AutomationExercise\\page-objects\\components\\Sidebar.ts:75\n\n\u001b[0m \u001b[90m 73 |\u001b[39m\n \u001b[90m 74 |\u001b[39m   \u001b[36masync\u001b[39m categoryMenJeans() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 75 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mmenJeans\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 76 |\u001b[39m   }\n \u001b[90m 77 |\u001b[39m\n \u001b[90m 78 |\u001b[39m   \u001b[36masync\u001b[39m categoryKids() {\u001b[0m"
-    }
-  ]
+  "status": "passed",
+  "executionTime": 4181,
+  "errors": []
 }
